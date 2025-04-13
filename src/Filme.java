@@ -15,11 +15,11 @@ public class Filme {
         this.status = status;
     }
 
-    static public void adicionarFilme(Filme filme) {
+    public static void adicionarFilme(Filme filme) {
         listaFilmes.add(filme);
     }
 
-    static public void informacaoFilmes() {
+    public static void informacaoFilmes() {
         int cont = 1;
         System.out.println("=================================================");
         for (Filme filme : listaFilmes){
@@ -32,7 +32,7 @@ public class Filme {
             System.out.println("================================================= ");
     }
 
-    static public void alugarFilme() {
+    public static void alugarFilme() {
         System.out.println("Digite o número do filme que deseja alugar:");
         int numFilme = sc.nextInt();
         if (numFilme > listaFilmes.size()){
