@@ -36,8 +36,8 @@ public class Filme {
         System.out.println("Digite o número do filme que deseja alugar:");
         int numFilme = sc.nextInt();
         if (numFilme > listaFilmes.size()){
-            System.out.println("Numéro inválido!");
             alugarFilme();
+            System.out.println("Numéro inválido!");
         }else {
             String status = listaFilmes.get(numFilme-1).status;
             String filme = listaFilmes.get(numFilme-1).nome;
